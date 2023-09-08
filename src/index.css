@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+      @apply py-2 text-[14px] rounded-md border border-solid border-gray-300 font-medium px-4 bg-white text-grey-color rounded-lg ;
+    }
+    .btn-primary.active {
+      @apply  text-primary-color ;
+    }
+    p, h1, h2, h3, h4, h5, h6, span, div, li, a {
+      @apply text-grey-color text-14 font-medium; 
+    }
+    .advantages-card {
+      @apply items-center flex justify-center rounded-lg text-[#b5b5b5] border border-[#dee2e6] border-solid w-300 h-20;
+    }
+  }
