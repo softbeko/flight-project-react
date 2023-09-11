@@ -30,7 +30,7 @@ function App() {
 
   // Veriler yüklenirken kullanıcıya bir yükleniyor göstergesi göstermek için kullanılabilir
   if (loading) {
-    return ;
+    return;
   }
 
   return (

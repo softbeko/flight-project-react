@@ -15,4 +15,15 @@
     .advantages-card {
       @apply items-center flex justify-center rounded-lg text-[#b5b5b5] border border-[#dee2e6] border-solid w-300 h-20;
     }
+    .title-primary{
+      @apply text-black text-[28px];
+    }
+    .title-secondary{
+      @apply text-[#8A8A89] text-[16px] font-[400] mb-7 ;
+    }
+    .container{
+      width: 1300px !important;
+    }
   }
+
+  
