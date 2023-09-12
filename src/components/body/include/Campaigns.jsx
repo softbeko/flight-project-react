@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css'
+import "../../../carousel.css"
 function Campaigns() {
   const [campaigns, setCampaigns] = useState(null); // Başlangıçta null değeri kullanın
   const [loading, setLoading] = useState(true); // Veriler yüklenene kadar true olarak ayarla
@@ -42,7 +44,24 @@ function Campaigns() {
             perPage: 4, // Her sayfada 4 slayt görünecek
             gap: '1rem', // Slaytlar arasında boşluk ekler
             autoplay: true,
+            arrows: true,
+            pagination: true,
           }}>
+          {campaigns.map((item, index) => (
+            <SplideSlide key={index}>
+              <div className='border rounded-lg'>
+                <img src={item.CampaingsPhoto} alt={item.title} className="rounded-lg h-[185px] w-full " />
+                <div className='h-[106px] grid items-center ps-5 pt-2 pb-2'>
+                  <div className='text-[16px] text-black' >
+                    {item.title}
+                  </div>
+                  <div className='text-[14px] text-secondary-color font-[400]'>
+                    Kampanyayı İncele
+                  </div>
+                </div>
+              </div>
+            </SplideSlide>
+          ))}
           {campaigns.map((item, index) => (
             <SplideSlide key={index}>
               <div className='border rounded-lg'>

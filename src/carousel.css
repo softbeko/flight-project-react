@@ -1,0 +1,24 @@
+.splide:not(.is-overflow) .splide__pagination{
+    display: flex !important;
+    justify-content: center;
+    position: relative;
+    margin-top: 34px;
+
+}
+.splide__pagination{
+    margin-top: 40px !important;
+    position: relative !important;
+}
+.splide__pagination__page{
+    background-color: black !important;
+    width: 20px !important;;
+    height: 9px !important;;
+    border-radius: 10px !important;;
+}
+.splide__pagination__page.is-active{
+    background-color: #FB3D15 !important;
+    width: 20px;
+    height: 9px;
+    border-radius: 10px;
+    transform: scale(1) !important;
+}
