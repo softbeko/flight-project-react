@@ -24,6 +24,18 @@
     .container{
       width: 1300px !important;
     }
+    .search input{
+      @apply h-12 border me-3 border-[#e5e5e5] text-[#5f5f5f] rounded-md focus:outline-none font-[600] text-[14px] pl-[35px] ; 
+    }
+    .search .where input{
+      @apply w-[264px]
+    }
+    .search .search-minitext{
+      @apply text-[#b5b5b5]  text-[13px] font-[400] mb-4  ;
+    }
+    .search .input-icon{
+      @apply absolute top-[16px] left-2	
+    }
   }
 
   
