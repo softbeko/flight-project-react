@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  font-family: "Poppins",sans-serif;
+}
+
 @layer components {
     .btn-primary {
       @apply py-2 text-[14px] rounded-md border border-solid border-gray-300 font-medium px-4 bg-white text-grey-color rounded-lg ;
@@ -37,5 +41,3 @@
       @apply absolute top-[16px] left-2	
     }
   }
-
-  

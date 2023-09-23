@@ -11,7 +11,7 @@ function Searchbar() {
       <div>
         <div className='px-15 p-[16px]  rounded-tl-lg rounded-tr-lg w-[96px] text-base font-semibold h-[40px] flex justify-around items-center bg-white'>
           <div> <img src="https://tatilde.diji.app/assets/icons/black-plane.svg"/> </div>
-          <div> Uçuş </div>
+          <div className='text-black'> Uçuş </div>
 
         </div>
       </div>

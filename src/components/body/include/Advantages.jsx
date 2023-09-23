@@ -26,7 +26,7 @@ function Advantages() {
         {advantagesData.map((advantage, index) => (
           <div key={index} className='advantages-card'>
             <div className="grid grid-cols-3 gap-4 flex items-center">
-              <div className="col-span-2 ml-5 ">{advantage.title}</div>
+              <div className="col-span-2 ml-5 text-[#b5b5b5] ">{advantage.title}</div>
               <div className="ml-auto mr-5">
                 <img src={advantage.imageUrl} alt="" />
               </div>
