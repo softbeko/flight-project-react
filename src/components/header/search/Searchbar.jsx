@@ -29,7 +29,6 @@ function Searchbar() {
     <div>
       <SearchButton />
     </div>
-
     </div>
     
     </div>

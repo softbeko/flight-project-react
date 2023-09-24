@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SearchInputWhere from './SearchInputWhere';
-import SearchTo from './SearchTo';
-import Searchpage from './SearchPage/Searchpage';
-function SearchWhere() {
-  const [fromGo, setFromGo] = useState('Ankara');
-  const [FromGoId, setFromGoId] = useState([]);
+
+function SearchTo() {
+  const [fromGo, setFromGo] = useState('İstanbul');
 
   const [results, setResults] = useState([]);
   const [isListVisible, setIsListVisible] = useState(false);
@@ -36,7 +34,6 @@ function SearchWhere() {
 
   const handleSelect = (selectedValue) => {
     setFromGo(selectedValue.name);
-    setFromGoId({name :selectedValue.name , id: selectedValue.id, city:selectedValue.city , code: selectedValue.code , country:selectedValue.country , country_code : selectedValue.country_code })
   };
 
   const focusInput = () => {
@@ -73,16 +70,13 @@ function SearchWhere() {
           type='text'
           onClick={focusInput}
           value={fromGo}
-          id={FromGoId}
           onChange={(e) => handleInputChange(e, setFromGo)}
           ref={inputRef}
         />
         {isListVisible && <SearchInputWhere results={results} onSelect={handleSelect} />}
-        {isListVisible && <Searchpage results={results} selectedValues={FromGoId} />}
       </div>
-      <SearchTo />
     </div>
   );
 }
 
-export default SearchWhere;
+export default SearchTo;
